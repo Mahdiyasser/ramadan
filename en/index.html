@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <title>Ramadan Coming | Mahdi Yasser</title>
+    <meta name="title" content="Ramadan Coming | Mahdi Yasser">
+    <meta name="description"
+        content="Track the countdown to Ramadan with a beautiful coming soon page by Mahdi Yasser. A blessed month is on the way.">
+    <meta name="author" content="Mahdi Yasser">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ramadan.mahdiyasser.site/en/">
+    <meta property="og:title" content="Ramadan Coming | Mahdi Yasser">
+    <meta property="og:description"
+        content="Track the countdown to Ramadan with a beautiful coming soon page by Mahdi Yasser. A blessed month is on the way.">
+    <meta property="og:image" content="https://mahdiyasser.site/img/ramadan.png"> 
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mahdi Yasser",
+      "url": "https://ramadan.mahdiyasser.site/en/",
+      "logo": "https://mahdiyasser.site/img/ramadan.ico",
+      "description": "The official countdown page for Ramadan by Mahdi Yasser.",
+      "sameAs": [
+        "https://github.com/Mahdiyasser",
+        "https://instagram.com/mahdiyasser1",
+        "https://threads.com/@mahdiyasser1",
+        "https://www.tiktok.com/@_mahdiyasser_"
+      ]
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="https://mahdiyasser.site/img/ramadan.ico"> 
+    <link rel="apple-touch-icon" href="https://mahdiyasser.site/img/ramadan.ico"> 
+    <link rel="shortcut icon" href="https://mahdiyasser.site/img/ramadan.ico" />
+    <link rel="icon" href="https://mahdiyasser.site/img/ramadan.ico" />
+    <style>
+        /*
+        * 🌙 MODERN RAMADAN COMING SOON PAGE 🕌
+        * Designed and coded as a single file.
+        */
+        :root {
+            --color-primary: #1e3a8a; /* Deep Blue */
+            --color-secondary: #fcd34d; /* Gold/Amber */
+            --color-text-light: #fefefe;
+            --color-text-dark: #1f2937;
+            --color-bg-dark: #0f172a; /* Dark Navy/Black */
+            --font-main: 'Poppins', sans-serif;
+            --shadow-gold: 0 0 30px rgba(252, 211, 77, 0.8), 0 0 10px rgba(252, 211, 77, 0.5);
+            --lantern-size: 100px;
+        }
+
+        /* --- BASIC SETUP & FONT IMPORT (Google Fonts) --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap');
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--color-bg-dark);
+            color: var(--color-text-light);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; 
+            position: relative;
+        }
+
+        /* --- MAIN CONTAINER & CONTENT --- */
+        .coming-soon-container {
+            text-align: center;
+            z-index: 10; 
+            padding: 20px;
+            max-width: 90%;
+            position: relative;
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            color: var(--color-secondary);
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 0.5s;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 10vw, 8rem);
+            font-weight: 900;
+            line-height: 1;
+            text-shadow: 2px 2px var(--color-primary);
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: slideInUp 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+            animation-delay: 1s;
+        }
+
+        h1 span {
+            color: var(--color-secondary);
+            filter: drop-shadow(0 0 5px var(--color-secondary));
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 2s;
+        }
+
+        .countdown div {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            border-radius: 10px;
+            min-width: 80px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .countdown div:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .countdown .value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-secondary);
+            display: block;
+            line-height: 1;
+        }
+
+        .countdown .label {
+            font-size: 0.8rem;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .message-finished {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: var(--color-secondary);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        /* --- DYNAMIC LANTERN EFFECT CONTAINER --- */
+        .lantern-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 5;
+            overflow: hidden;
+        }
+
+        /* --- KEYFRAMES --- */
+        @keyframes fadeIn { to { opacity: 1; } }
+        @keyframes slideInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes lanternGlow {
+            0% { box-shadow: 0 0 5px var(--color-secondary), 0 0 10px var(--color-secondary); }
+            50% { box-shadow: 0 0 15px var(--color-secondary), 0 0 25px var(--color-secondary); }
+            100% { box-shadow: 0 0 5px var(--color-secondary), 0 0 10px var(--color-secondary); }
+        }
+        @keyframes riseAndSway {
+            0% { transform: translateY(100vh) translateX(0) rotate(0deg); opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-10vh) translateX(100px) rotate(5deg); opacity: 0; }
+        }
+        
+        .lantern-particle {
+            position: absolute;
+            width: var(--lantern-size);
+            height: var(--lantern-size);
+            background-color: rgba(252, 211, 77, 0.1);
+            border-radius: 50%;
+            border: 1px solid var(--color-secondary);
+            opacity: 0;
+            animation: riseAndSway 20s infinite linear, lanternGlow 3s infinite alternate;
+        }
+
+   @media (max-width: 600px) {
+    /* --- GENERAL ADJUSTMENTS --- */
+    .coming-soon-container {
+        padding: 10px;
+        max-width: 95%; /* Use slightly more width */
+    }
+
+    /* --- LOGO / HEADER TEXT --- */
+    .logo-text {
+        font-size: 0.9rem; /* Slightly smaller for a tighter fit */
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+
+    /* --- H1 MAIN HEADING --- */
+    h1 {
+        font-size: clamp(2.5rem, 15vw, 6rem); /* Make it truly responsive and a bit smaller */
+        margin-bottom: 5px;
+    }
+    
+    /* --- SUBTITLE --- */
+    #main-subtitle {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    /* --- COUNTDOWN --- */
+    .countdown { 
+        flex-direction: column; /* Stack the countdown items vertically */
+        gap: 10px; 
+        margin-top: 25px;
+    }
+    
+    .countdown div { 
+        min-width: unset; 
+        padding: 10px 15px; /* A little wider padding */
+    }
+    
+    .countdown .value { 
+        font-size: 2rem; /* Keep the numbers prominent */
+    }
+    
+    .countdown .label {
+        font-size: 0.7rem; /* Make the label smaller */
+        letter-spacing: 1px;
+    }
+
+    /* --- FINISH MESSAGE --- */
+    .message-finished {
+        font-size: 1.2rem;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="lantern-container" id="lanterns"></div>
+
+    <div class="coming-soon-container">
+        <p class="logo-text">MAHDI YASSER</p>
+        <h1>
+            RAMADAN <span>COMING</span>
+        </h1>
+        <h2 id="main-subtitle">
+            A BLESSED MONTH IS ON THE WAY
+        </h2>
+        
+        <div class="countdown" id="countdown">
+            <div><span class="value" id="days">00</span><span class="label">Days</span></div>
+            <div><span class="value" id="hours">00</span><span class="label">Hours</span></div>
+            <div><span class="value" id="minutes">00</span><span class="label">Minutes</span></div>
+            <div><span class="value" id="seconds">00</span><span class="label">Seconds</span></div>
+        </div>
+        <div id="finish-message"></div>
+    </div>
+
+    <script>
+        // --- CONFIGURATION ---
+        // Ensure this is the correct launch date you are testing with.
+        const LAUNCH_DATE = new Date('02 12, 2026 00:00:00').getTime(); 
+        
+        const LANTERN_COUNT = 15;
+        const CONTAINER_ID = 'lanterns';
+        const LANTERN_CLASS = 'lantern-particle';
+
+        // --- GLOBAL VARIABLE DECLARATIONS ---
+        let countdownInterval; 
+        let celebrationStarted = false; 
+
+        // Variables for continuous celebration decay
+        let decayIntensity = 15;      
+        const MIN_INTENSITY = 1.5;    
+        const DECAY_RATE = 0.95;      
+
+        // --- 1. COUNTDOWN LOGIC ---
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = LAUNCH_DATE - now;
+            
+            // --- TITLE LOGIC: Set the 'Coming Soon' title before the event ---
+            if (distance > 0) {
+                document.title = 'Ramadan Coming | Mahdi Yasser';
+            }
+
+            // CHECK IF TIME IS OVER
+            if (distance < 0) {
+                if (countdownInterval) clearInterval(countdownInterval);
+
+                // --- H1 TEXT CHANGE: Change RAMADAN COMING to RAMADAN MUBARAK ---
+                const h1Element = document.querySelector('h1');
+                if (h1Element) {
+                    h1Element.innerHTML = 'RAMADAN <span>MUBARAK</span>';
+                }
+                
+                // --- TITLE LOGIC: Revert the title back after the event ---
+                document.title = 'Ramadan Mubarak | Mahdi Yasser';
+
+
+                if(document.getElementById('days')) {
+                    document.getElementById('days').innerText = "00";
+                    document.getElementById('hours').innerText = "00";
+                    document.getElementById('minutes').innerText = "00";
+                    document.getElementById('seconds').innerText = "00";
+                    
+                    document.getElementById('main-subtitle').innerText = 'A BLESSED MONTH HAS ARRIVED';
+                    const msgDiv = document.getElementById('finish-message');
+                    msgDiv.innerHTML = '<div class="message-finished">MAY YOUR FAST BE ACCEPTED</div>';
+                }
+
+                startCelebration();
+                return; 
+            }
+
+            // Normal Calculation
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            const formatTime = (t) => t < 10 ? '0' + t : t;
+
+            if(document.getElementById('days')) {
+                document.getElementById('days').innerText = formatTime(days);
+                document.getElementById('hours').innerText = formatTime(hours);
+                document.getElementById('minutes').innerText = formatTime(minutes);
+                document.getElementById('seconds').innerText = formatTime(seconds);
+            }
+        }
+
+        updateCountdown(); 
+        countdownInterval = setInterval(updateCountdown, 1000);
+
+
+        // --- 2. LANTERN BACKGROUND ---
+        function createLanterns() {
+            const container = document.getElementById(CONTAINER_ID);
+            if (!container) return;
+
+            for (let i = 0; i < LANTERN_COUNT; i++) {
+                const lantern = document.createElement('div');
+                lantern.classList.add(LANTERN_CLASS);
+                const startX = Math.random() * 100; 
+                const size = Math.random() * 50 + 50; 
+                const duration = Math.random() * 10 + 15; 
+                const delay = Math.random() * 15; 
+                lantern.style.setProperty('--lantern-size', `${size}px`);
+                lantern.style.left = `${startX}vw`;
+                lantern.style.animationDuration = `${duration}s`;
+                lantern.style.animationDelay = `${delay}s`;
+                lantern.style.setProperty('transform', `translateX(${Math.random() * 20 - 10}px)`);
+                container.appendChild(lantern);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', createLanterns);
+
+
+        // --- 3. CELEBRATION (FIREWORKS & CONFETTI) using Confetti.js ---
+        function startCelebration() {
+            if (celebrationStarted || typeof confetti === 'undefined') return;
+            celebrationStarted = true;
+
+            const celebrationColors = ['#fcd34d', '#ffffff', '#1e3a8a', '#ff4500', '#00ffcc'];
+
+            const defaults = {
+                ticks: 200,
+                gravity: 0.1,
+                decay: 0.94,
+                startVelocity: 35,
+                shapes: ['star', 'circle', 'square'],
+                colors: celebrationColors.map(c => c.replace('#', ''))
+            };
+
+            const fire = (particleRatio, opts) => {
+                confetti({
+                    ...defaults,
+                    ...opts,
+                    particleCount: Math.floor(200 * particleRatio)
+                });
+            };
+
+            // 1. MASSIVE INITIAL BURST 
+            fire(0.6, { spread: 180, startVelocity: 60, origin: { x: 0.5, y: 0.3 } });
+            fire(0.5, { spread: 100, origin: { x: 0.1, y: 0.5 } });
+            fire(0.5, { spread: 100, origin: { x: 0.9, y: 0.5 } });
+            fire(0.7, { spread: 150, decay: 0.91, scalar: 0.8, origin: { x: 0.5, y: 0.7 } });
+            
+            decayIntensity = 15; 
+
+            // 2. CONTINUOUS DECAYING LOOP (Corrected Angled Cannons)
+            (function continuousDecay() {
+                const currentParticleCount = Math.floor(Math.max(MIN_INTENSITY, decayIntensity)); 
+                
+                // Left Canon (Origin: Bottom Left)
+                // Angle 60 degrees: Shoots diagonally up-right, into the page.
+                confetti({
+                    ...defaults,
+                    particleCount: currentParticleCount,
+                    scalar: 1.5,
+                    angle: 60, 
+                    spread: 25,
+                    origin: { x: 0.05, y: 1.0 } 
+                });
+
+                // Right Canon (Origin: Bottom Right)
+                // Angle 120 degrees: Shoots diagonally up-left, into the page.
+                confetti({
+                    ...defaults,
+                    particleCount: currentParticleCount,
+                    scalar: 1.5,
+                    angle: 120, 
+                    spread: 25,
+                    origin: { x: 0.95, y: 1.0 } 
+                });
+
+                // Apply decay if we are above the minimum limit
+                if (decayIntensity > MIN_INTENSITY) {
+                    decayIntensity *= DECAY_RATE; 
+                }
+                
+                // Always keep the loop running
+                setTimeout(continuousDecay, 300); 
+            })();
+        }
+    </script>
+
+</body>
+</html>
