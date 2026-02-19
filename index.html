@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#060d1a">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="description" content="دليلك الروحي الشامل في رمضان ١٤٤٧">
-  <title>رمضان ١٤٤٧ — دليلك الروحي</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Amiri+Quran&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+
+    <!-- CONFIG -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#060d1a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- --- --- --- -->
+    <title>رمضان ١٤٤٧ — دليلك الروحي</title>
+    <meta name="title" content="رمضان ١٤٤٧ — دليلك الروحي">
+    <meta name="description" content="دليلك الروحي الشامل في رمضان ١٤٤٧.">
+    <meta name="author" content="Mahdi Yasser">
+    <meta name="robots" content="index, follow">
+
+    <!-- META DATA -->
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ramadan.mahdiyasser.site/">
+    <meta property="og:title" content="رمضان ١٤٤٧ — دليلك الروحي">
+    <meta property="og:description" content="دليلك الروحي الشامل في رمضان ١٤٤٧.">
+    <meta property="og:image" content="https://mahdiyasser.site/data/banner.png"> 
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mahdi Yasser",
+      "url": "https://ramadan.mahdiyasser.site/",
+      "logo": "https://mahdiyasser.site/img/ramadan.ico",
+      "description": "The official Ramadan website by Mahdi Yasser.",
+      "sameAs": [
+        "https://github.com/Mahdiyasser",
+        "https://instagram.com/mahdiyasser1",
+        "https://threads.com/@mahdiyasser1",
+        "https://www.tiktok.com/@_mahdiyasser_"
+      ]
+    }
+    </script>
+
+    <!-- ICONS & PWA -->
+
+    <link rel="icon" type="image/png" href="/favicon.ico"> 
+    <link rel="apple-touch-icon" href="/favicon.ico"> 
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./data/manifest.json">
+
+    <!-- SW Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW registered:', reg.scope))
+            .catch(err => console.error('SW registration failed:', err));
+        });
+      }
+    </script>
+    
+    <!-- EXTERNAL LIBS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Amiri+Quran&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
