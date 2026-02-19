@@ -59,6 +59,27 @@
         });
       }
     </script>
+
+    <!-- Cache Buster -->
+    <script>
+      if (new URLSearchParams(location.search).has('purge')) {
+        const v = Date.now();
+        document.addEventListener('DOMContentLoaded', () => {
+          document.querySelectorAll(
+            'link[href], script[src], img[src], source[src], source[srcset]'
+          ).forEach(el => {
+            ['href', 'src', 'srcset'].forEach(attr => {
+              const val = el.getAttribute(attr);
+              if (val && /\.(js|css|png|jpg|jpeg|gif|svg)(\?|$)/i.test(val)) {
+                const url = new URL(val, location.href);
+                url.searchParams.set('v', v);
+                el.setAttribute(attr, url.pathname + url.search);
+              }
+            });
+          });
+        });
+      }
+    </script>
     
     <!-- EXTERNAL LIBS -->
 
