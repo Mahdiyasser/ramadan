@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "ramadan_year": 1447,
+    "ramadan_start_gregorian": "2026-02-19",
+    "ramadan_end_gregorian": "2026-03-20"
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-02-19",
+      "hijri_day": "1 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "استقبال رمضان",
+      "special_occasion": "أول يوم رمضان",
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 2,
+      "date": "2026-02-20",
+      "hijri_day": "2 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "فضل صيام رمضان",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 3,
+      "date": "2026-02-21",
+      "hijri_day": "3 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "الصيام جنة",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 4,
+      "date": "2026-02-22",
+      "hijri_day": "4 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "بركة السحور",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 5,
+      "date": "2026-02-23",
+      "hijri_day": "5 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "فرحة الصائم",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 6,
+      "date": "2026-02-24",
+      "hijri_day": "6 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "الصيام لله وحده",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 7,
+      "date": "2026-02-25",
+      "hijri_day": "7 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "حفظ الصيام من اللغو",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 8,
+      "date": "2026-02-26",
+      "hijri_day": "8 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "الكرم في رمضان",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 9,
+      "date": "2026-02-27",
+      "hijri_day": "9 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "قيام رمضان",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 10,
+      "date": "2026-02-28",
+      "hijri_day": "10 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "theme": "دعاء الصائم لا يُرد",
+      "special_occasion": "نهاية العشر الأولى",
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 11,
+      "date": "2026-03-01",
+      "hijri_day": "11 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "أثلاث رمضان",
+      "special_occasion": "بداية العشر الثانية",
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 12,
+      "date": "2026-03-02",
+      "hijri_day": "12 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "باب التوبة مفتوح",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 13,
+      "date": "2026-03-03",
+      "hijri_day": "13 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "التائب كمن لا ذنب له",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 14,
+      "date": "2026-03-04",
+      "hijri_day": "14 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "إطعام الصائم",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 15,
+      "date": "2026-03-05",
+      "hijri_day": "15 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "سيد الاستغفار",
+      "special_occasion": "منتصف رمضان",
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 16,
+      "date": "2026-03-06",
+      "hijri_day": "16 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "فضل قيام الليل",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 17,
+      "date": "2026-03-07",
+      "hijri_day": "17 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "القرآن شفيع يوم القيامة",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 18,
+      "date": "2026-03-08",
+      "hijri_day": "18 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "الصدقة تطفئ الخطيئة",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 19,
+      "date": "2026-03-09",
+      "hijri_day": "19 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "الدعاء عبادة",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 20,
+      "date": "2026-03-10",
+      "hijri_day": "20 رمضان 1447",
+      "ashr": "العشر الثانية",
+      "ashr_theme": "المغفرة",
+      "theme": "استعداد للعشر الأخيرة",
+      "special_occasion": "نهاية العشر الثانية — استعدّ للعشر الأخيرة",
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 21,
+      "date": "2026-03-11",
+      "hijri_day": "21 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "التحري عن ليلة القدر",
+      "special_occasion": "بداية العشر الأخيرة — الليلة 21 (وتر)",
+      "is_laylat_al_qadr_candidate": true,
+      "note": ""
+    },
+    {
+      "day": 22,
+      "date": "2026-03-12",
+      "hijri_day": "22 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "الاعتكاف",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 23,
+      "date": "2026-03-13",
+      "hijri_day": "23 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "أجر قيام ليلة القدر",
+      "special_occasion": "الليلة 23 (وتر) — ليلة مرجوة",
+      "is_laylat_al_qadr_candidate": true,
+      "note": ""
+    },
+    {
+      "day": 24,
+      "date": "2026-03-14",
+      "hijri_day": "24 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "باب الريان",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 25,
+      "date": "2026-03-15",
+      "hijri_day": "25 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "دعاء ليلة القدر",
+      "special_occasion": "الليلة 25 (وتر) — ليلة مرجوة",
+      "is_laylat_al_qadr_candidate": true,
+      "note": ""
+    },
+    {
+      "day": 26,
+      "date": "2026-03-16",
+      "hijri_day": "26 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "من أنفق في سبيل الله نودي من الجنة",
+      "special_occasion": null,
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 27,
+      "date": "2026-03-17",
+      "hijri_day": "27 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "الليلة الأرجى — ليلة 27",
+      "special_occasion": "الليلة 27 (وتر) — أرجى ليالي القدر",
+      "is_laylat_al_qadr_candidate": true,
+      "note": ""
+    },
+    {
+      "day": 28,
+      "date": "2026-03-18",
+      "hijri_day": "28 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "زكاة الفطر",
+      "special_occasion": "أداء زكاة الفطر قبل صلاة العيد",
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    },
+    {
+      "day": 29,
+      "date": "2026-03-19",
+      "hijri_day": "29 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "الخواتيم",
+      "special_occasion": "الليلة 29 (وتر) — آخر ليالي التحري",
+      "is_laylat_al_qadr_candidate": true,
+      "note": ""
+    },
+    {
+      "day": 30,
+      "date": "2026-03-20",
+      "hijri_day": "30 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "theme": "وداع رمضان",
+      "special_occasion": "آخر يوم رمضان — ليلة العيد",
+      "is_laylat_al_qadr_candidate": false,
+      "note": ""
+    }
+  ]
+}

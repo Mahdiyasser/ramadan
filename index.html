@@ -1,473 +1,527 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap">
-
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
-    <title>رمضان قادم | مهدي ياسر</title>
-    <meta name="title" content="رمضان قادم | مهدي ياسر">
-    <meta name="description"
-        content="تتبع العد التنازلي لشهر رمضان مع صفحة قريباً جميلة من تصميم مهدي ياسر. شهر مبارك في الطريق.">
-    <meta name="author" content="Mahdi Yasser">
-    <meta name="robots" content="index, follow">
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ramadan.mahdiyasser.site/">
-    <meta property="og:title" content="رمضان قادم | مهدي ياسر">
-    <meta property="og:description"
-        content="تتبع العد التنازلي لشهر رمضان مع صفحة قريباً جميلة من تصميم مهدي ياسر. شهر مبارك في الطريق.">
-    <meta property="og:image" content="https://mahdiyasser.site/img/ramadan.png"> 
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Mahdi Yasser",
-      "url": "https://ramadan.mahdiyasser.site/",
-      "logo": "https://mahdiyasser.site/img/ramadan.ico",
-      "description": "The official countdown page for Ramadan by Mahdi Yasser.",
-      "sameAs": [
-        "https://github.com/Mahdiyasser",
-        "https://instagram.com/mahdiyasser1",
-        "https://threads.com/@mahdiyasser1",
-        "https://www.tiktok.com/@_mahdiyasser_"
-      ]
-    }
-    </script>
-
-    <link rel="icon" type="image/png" href="https://mahdiyasser.site/img/ramadan.ico"> 
-    <link rel="apple-touch-icon" href="https://mahdiyasser.site/img/ramadan.ico"> 
-    <link rel="shortcut icon" href="https://mahdiyasser.site/img/ramadan.ico" />
-    <link rel="icon" href="https://mahdiyasser.site/img/ramadan.ico" />
-
-    <style>
-        /*
-        * 🌙 MODERN RAMADAN COMING SOON PAGE 🕌
-        * Designed and coded as a single file.
-        */
-        :root {
-            --color-primary: #1e3a8a; /* Deep Blue */
-            --color-secondary: #fcd34d; /* Gold/Amber */
-            --color-text-light: #fefefe;
-            --color-text-dark: #1f2937;
-            --color-bg-dark: #0f172a; /* Dark Navy/Black */
-            --font-main: 'Poppins', sans-serif; /* Poppins works well for a modern look even with Arabic fallback */
-            --shadow-gold: 0 0 30px rgba(252, 211, 77, 0.8), 0 0 10px rgba(252, 211, 77, 0.5);
-            --lantern-size: 100px;
-        }
-
-        /* --- BASIC SETUP & FONT IMPORT (Google Fonts) --- */
-        /* A common practice for Arabic is to use a specific font for RTL, 
-           but we'll keep the current import for consistency and let the browser 
-           handle the Arabic fallback font unless explicitly changed. 
-           We'll also add a rule for RTL text alignment. */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700;900&display=swap');
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: var(--font-main);
-            background-color: var(--color-bg-dark);
-            color: var(--color-text-light);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; 
-            position: relative;
-        }
-        
-        /* Apply RTL text alignment to the main container for Arabic text */
-        .coming-soon-container {
-            text-align: center;
-            z-index: 10; 
-            padding: 20px;
-            max-width: 90%;
-            position: relative;
-            direction: rtl; /* Explicitly set direction to RTL */
-        }
-
-        .logo-text {
-            font-size: 1.2rem;
-            font-weight: 400;
-            letter-spacing: 5px;
-            margin-bottom: 20px;
-            color: var(--color-secondary);
-            opacity: 0;
-            animation: fadeIn 2s forwards;
-            animation-delay: 0.5s;
-        }
-
-        h1 {
-            font-size: clamp(3rem, 10vw, 8rem);
-            font-weight: 900;
-            line-height: 1;
-            text-shadow: 2px 2px var(--color-primary);
-            margin-bottom: 10px;
-            opacity: 0;
-            animation: slideInUp 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-            animation-delay: 1s;
-        }
-
-        h1 span {
-            color: var(--color-secondary);
-            filter: drop-shadow(0 0 5px var(--color-secondary));
-        }
-
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
-            opacity: 0;
-            animation: fadeIn 2s forwards;
-            animation-delay: 2s;
-        }
-
-        .countdown div {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px 20px;
-            border-radius: 10px;
-            min-width: 80px;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        .countdown div:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: var(--shadow-gold);
-        }
-
-        .countdown .value {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--color-secondary);
-            display: block;
-            line-height: 1;
-        }
-
-        .countdown .label {
-            font-size: 0.8rem;
-            font-weight: 100;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            display: block;
-            margin-top: 5px;
-            /* Reset letter-spacing and uppercase for better Arabic display */
-            text-transform: none; 
-            letter-spacing: normal;
-        }
-
-        .message-finished {
-            margin-top: 20px;
-            font-size: 1.5rem;
-            color: var(--color-secondary);
-            opacity: 0;
-            animation: fadeIn 1s forwards;
-        }
-
-        /* --- DYNAMIC LANTERN EFFECT CONTAINER --- */
-        .lantern-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 5;
-            overflow: hidden;
-        }
-
-        /* --- KEYFRAMES --- */
-        @keyframes fadeIn { to { opacity: 1; } }
-        @keyframes slideInUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        @keyframes lanternGlow {
-            0% { box-shadow: 0 0 5px var(--color-secondary), 0 0 10px var(--color-secondary); }
-            50% { box-shadow: 0 0 15px var(--color-secondary), 0 0 25px var(--color-secondary); }
-            100% { box-shadow: 0 0 5px var(--color-secondary), 0 0 10px var(--color-secondary); }
-        }
-        @keyframes riseAndSway {
-            0% { transform: translateY(100vh) translateX(0) rotate(0deg); opacity: 0; }
-            50% { opacity: 0.8; }
-            100% { transform: translateY(-10vh) translateX(100px) rotate(5deg); opacity: 0; }
-        }
-        
-        .lantern-particle {
-            position: absolute;
-            width: var(--lantern-size);
-            height: var(--lantern-size);
-            background-color: rgba(252, 211, 77, 0.1);
-            border-radius: 50%;
-            border: 1px solid var(--color-secondary);
-            opacity: 0;
-            animation: riseAndSway 20s infinite linear, lanternGlow 3s infinite alternate;
-        }
-
-   @media (max-width: 600px) {
-    /* --- GENERAL ADJUSTMENTS --- */
-    .coming-soon-container {
-        padding: 10px;
-        max-width: 95%; /* Use slightly more width */
-    }
-
-    /* --- LOGO / HEADER TEXT --- */
-    .logo-text {
-        font-size: 0.9rem; /* Slightly smaller for a tighter fit */
-        letter-spacing: 3px;
-        margin-bottom: 15px;
-    }
-
-    /* --- H1 MAIN HEADING --- */
-    h1 {
-        font-size: clamp(2.5rem, 15vw, 6rem); /* Make it truly responsive and a bit smaller */
-        margin-bottom: 5px;
-    }
-    
-    /* --- SUBTITLE --- */
-    #main-subtitle {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-
-    /* --- COUNTDOWN --- */
-    .countdown { 
-        flex-direction: column; /* Stack the countdown items vertically */
-        gap: 10px; 
-        margin-top: 25px;
-    }
-    
-    .countdown div { 
-        min-width: unset; 
-        padding: 10px 15px; /* A little wider padding */
-    }
-    
-    .countdown .value { 
-        font-size: 2rem; /* Keep the numbers prominent */
-    }
-    
-    .countdown .label {
-        font-size: 0.7rem; /* Make the label smaller */
-        letter-spacing: 1px;
-        /* Reset letter-spacing for better Arabic display */
-        letter-spacing: normal;
-    }
-
-    /* --- FINISH MESSAGE --- */
-    .message-finished {
-        font-size: 1.2rem;
-    }
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#060d1a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="دليلك الروحي الشامل في رمضان ١٤٤٧">
+  <title>رمضان ١٤٤٧ — دليلك الروحي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Amiri+Quran&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="lantern-container" id="lanterns"></div>
+  <!-- AMBIENT BACKGROUND -->
+  <div class="bg-canvas" aria-hidden="true">
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+    <svg class="geo-pattern" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <pattern id="islamic-geo" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+          <polygon points="40,0 80,20 80,60 40,80 0,60 0,20" fill="none" stroke="rgba(201,168,76,0.06)" stroke-width="0.5"/>
+          <polygon points="40,10 70,25 70,55 40,70 10,55 10,25" fill="none" stroke="rgba(201,168,76,0.04)" stroke-width="0.5"/>
+          <line x1="40" y1="0" x2="40" y2="80" stroke="rgba(201,168,76,0.03)" stroke-width="0.5"/>
+          <line x1="0" y1="40" x2="80" y2="40" stroke="rgba(201,168,76,0.03)" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#islamic-geo)"/>
+    </svg>
+  </div>
 
-    <div class="coming-soon-container">
-        <p class="logo-text">مَهْدِي يَاسِر</p>
-        <h1>
-            رَمَضَان <span>قَادِم</span>
-        </h1>
-        <h2 id="main-subtitle">
-            شَهْر مُبَارَك فِي الطَّرِيق
-        </h2>
-        
-        <div class="countdown" id="countdown">
-            <div><span class="value" id="days">00</span><span class="label">يوم</span></div>
-            <div><span class="value" id="hours">00</span><span class="label">ساعة</span></div>
-            <div><span class="value" id="minutes">00</span><span class="label">دقيقة</span></div>
-            <div><span class="value" id="seconds">00</span><span class="label">ثانية</span></div>
-        </div>
-        <div id="finish-message"></div>
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="header-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <div class="header-main">
+      <div class="crescent-wrap" aria-hidden="true" ><i class="fa-solid fa-moon" style="transform: scaleX(-1);"></i></div>
+      <div class="header-text">
+        <h1 class="site-title">رمضان <span class="gold-text">١٤٤٧</span></h1>
+        <p class="site-sub">دليلك الروحي الشامل</p>
+      </div>
     </div>
+    <div class="header-clock" id="live-clock"></div>
+  </header>
 
-    <script>
-        // --- CONFIGURATION ---
-        // Ensure this is the correct launch date you are testing with.
-        const LAUNCH_DATE = new Date('02 18, 2026 19:30:00').getTime(); 
-        
-        const LANTERN_COUNT = 15;
-        const CONTAINER_ID = 'lanterns';
-        const LANTERN_CLASS = 'lantern-particle';
+  <!-- BOTTOM NAVIGATION -->
+  <nav class="bottom-nav" role="navigation" aria-label="التنقل الرئيسي">
+    <a href="#today" class="nav-item active" data-section="today">
+      <span class="nav-icon" aria-hidden="true">🌙</span>
+      <span class="nav-label">اليوم</span>
+    </a>
+    <a href="#prayer" class="nav-item" data-section="prayer">
+      <span class="nav-icon" aria-hidden="true">🕌</span>
+      <span class="nav-label">الصلاة</span>
+    </a>
+    <a href="#content" class="nav-item" data-section="content">
+      <span class="nav-icon" aria-hidden="true">📖</span>
+      <span class="nav-label">المحتوى</span>
+    </a>
+    <a href="#calendar" class="nav-item" data-section="calendar">
+      <span class="nav-icon" aria-hidden="true">📅</span>
+      <span class="nav-label">التقويم</span>
+    </a>
+    <a href="#tracker" class="nav-item" data-section="tracker">
+      <span class="nav-icon" aria-hidden="true">📋</span>
+      <span class="nav-label">المتابعة</span>
+    </a>
+    <a href="#tasbih-section" class="nav-item" data-section="tasbih-section">
+      <span class="nav-icon" aria-hidden="true">📿</span>
+      <span class="nav-label">التسبيح</span>
+    </a>
+  </nav>
 
-        // --- GLOBAL VARIABLE DECLARATIONS ---
-        let countdownInterval; 
-        let celebrationStarted = false; 
+  <main>
 
-        // Variables for continuous celebration decay
-        let decayIntensity = 15;      
-        const MIN_INTENSITY = 1.5;    
-        const DECAY_RATE = 0.95;      
+    <!-- ══════════════════════════════ TODAY SECTION ══════════════════════════════ -->
+    <section id="today" class="section">
+      <div class="section-inner">
 
-        // --- HELPER FUNCTION: Convert English digits to Arabic (Hindi) digits ---
-        function toArabicDigits(number) {
-            const arabicDigits = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
-            return String(number).replace(/[0-9]/g, (digit) => arabicDigits[digit]);
-        }
-        
-        // --- 1. COUNTDOWN LOGIC ---
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = LAUNCH_DATE - now;
-            
-            // --- TITLE LOGIC: Set the 'Coming Soon' title before the event ---
-            if (distance > 0) {
-                document.title = 'رمضان قادم | مهدي ياسر';
-            }
+        <!-- Special Occasion / Laylat al-Qadr banners -->
+        <div id="special-banner" class="special-banner hidden" role="alert"></div>
+        <div id="qadr-banner" class="qadr-banner hidden" role="alert">
+          <div class="qadr-stars" aria-hidden="true">✨ ✨ ✨</div>
+          <p class="qadr-headline">قد تكون هذه ليلة القدر</p>
+          <p class="qadr-sub">أحيها بالصلاة والذكر والدعاء</p>
+          <div class="qadr-dua">
+            «اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي»
+          </div>
+        </div>
 
-            // CHECK IF TIME IS OVER
-            if (distance < 0) {
-                if (countdownInterval) clearInterval(countdownInterval);
+        <!-- Main day card -->
+        <div class="day-hero-card">
+          <div class="day-hero-top">
+            <div class="day-number-block">
+              <span class="day-small-label">اليوم</span>
+              <span class="day-big-num" id="today-day-num">١</span>
+              <span class="day-small-label">من رمضان</span>
+            </div>
+            <div class="moon-deco" aria-hidden="true">
+              <span class="moon-crescent">🌙</span>
+              <span class="moon-stars">✦ ✧ ✦</span>
+            </div>
+          </div>
+          <div class="day-dates-row">
+            <span id="today-hijri" class="hijri-date-text"></span>
+            <span class="dates-sep" aria-hidden="true">•</span>
+            <span id="today-gregorian" class="gregorian-date-text"></span>
+          </div>
+          <div class="ashr-row">
+            <span id="today-ashr-badge" class="ashr-badge"></span>
+            <span id="today-ashr-theme-text" class="ashr-theme-text"></span>
+          </div>
+          <div id="today-theme-text" class="today-theme"></div>
+        </div>
 
-                // --- H1 TEXT CHANGE: Change RAMADAN COMING to RAMADAN MUBARAK ---
-                const h1Element = document.querySelector('h1');
-                if (h1Element) {
-                    h1Element.innerHTML = 'رَمَضَان <span>مُبَارَك</span>';
-                }
-                
-                // --- TITLE LOGIC: Revert the title back after the event ---
-                document.title = 'رمضان مبارك | مهدي ياسر';
+        <!-- Ramadan progress bar -->
+        <div class="progress-widget">
+          <div class="progress-top-row">
+            <span class="progress-title">تقدم الشهر</span>
+            <span id="progress-label" class="progress-label">اليوم ١ من ٣٠</span>
+          </div>
+          <div class="progress-track">
+            <div id="progress-fill" class="progress-fill" style="width: 3.33%"></div>
+          </div>
+          <div class="ashr-dividers">
+            <span class="ashr-div-label mercy-color">الرحمة<br><small>أيام ١–١٠</small></span>
+            <span class="ashr-div-label forgiveness-color">المغفرة<br><small>أيام ١١–٢٠</small></span>
+            <span class="ashr-div-label freedom-color">العتق<br><small>أيام ٢١–٣٠</small></span>
+          </div>
+        </div>
 
+        <!-- Stats row -->
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">⭐</div>
+            <div class="stat-num" id="stat-points">0</div>
+            <div class="stat-label">نقاطي</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">✅</div>
+            <div class="stat-num" id="stat-days">0</div>
+            <div class="stat-label">أيام مكتملة</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">📖</div>
+            <div class="stat-num" id="stat-juz">0</div>
+            <div class="stat-label">أجزاء</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon" aria-hidden="true">📿</div>
+            <div class="stat-num" id="stat-tasbih">0</div>
+            <div class="stat-label">تسبيحات</div>
+          </div>
+        </div>
 
-                if(document.getElementById('days')) {
-                    document.getElementById('days').innerText = toArabicDigits("00"); // Modified
-                    document.getElementById('hours').innerText = toArabicDigits("00"); // Modified
-                    document.getElementById('minutes').innerText = toArabicDigits("00"); // Modified
-                    document.getElementById('seconds').innerText = toArabicDigits("00"); // Modified
-                    
-                    document.getElementById('main-subtitle').innerText = 'شَهْر مُبَارَك قَدْ وَصَل';
-                    const msgDiv = document.getElementById('finish-message');
-                    msgDiv.innerHTML = '<div class="message-finished">تَقَبَّلَ اللَّهُ صِيَامَكُمْ</div>';
-                }
+      </div>
+    </section>
 
-                startCelebration();
-                return; 
-            }
+    <!-- ══════════════════════════════ PRAYER TIMES SECTION ══════════════════════════════ -->
+    <section id="prayer" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">
+          <span class="title-icon" aria-hidden="true">🕌</span>
+          مواقيت الصلاة
+        </h2>
 
-            // Normal Calculation
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        <!-- City chooser -->
+        <div id="city-chooser" class="city-chooser">
+          <p class="city-chooser-prompt">اختر مدينتك لعرض مواقيت الصلاة</p>
+          <div class="city-search-box">
+            <input type="search" id="city-search-input" class="city-search-input" 
+                   placeholder="ابحث عن مدينة..." autocomplete="off" aria-label="البحث عن مدينة">
+            <span class="search-icon" aria-hidden="true">🔍</span>
+          </div>
+          <div id="cities-list" class="cities-list" role="listbox" aria-label="قائمة المدن"></div>
+        </div>
 
-            const formatTime = (t) => t < 10 ? '0' + t : t;
+        <!-- Prayer display (hidden until city chosen) -->
+        <div id="prayer-display" class="prayer-display hidden">
+          <div class="prayer-city-header">
+            <span class="prayer-city-icon" aria-hidden="true">📍</span>
+            <span id="prayer-city-label" class="prayer-city-label"></span>
+            <button id="change-city-btn" class="change-city-btn">تغيير</button>
+          </div>
 
-            if(document.getElementById('days')) {
-                document.getElementById('days').innerText = toArabicDigits(formatTime(days)); // Modified
-                document.getElementById('hours').innerText = toArabicDigits(formatTime(hours)); // Modified
-                document.getElementById('minutes').innerText = toArabicDigits(formatTime(minutes)); // Modified
-                document.getElementById('seconds').innerText = toArabicDigits(formatTime(seconds)); // Modified
-            }
-        }
+          <!-- Countdown to next prayer -->
+          <div id="next-prayer-widget" class="next-prayer-widget">
+            <div class="npw-label">الصلاة القادمة</div>
+            <div id="npw-prayer-name" class="npw-prayer-name">—</div>
+            <div id="npw-countdown" class="npw-countdown">--:--:--</div>
+            <div id="npw-athan-time" class="npw-athan-time"></div>
+          </div>
 
-        updateCountdown(); 
-        countdownInterval = setInterval(updateCountdown, 1000);
+          <!-- Iftar / Suhoor specials -->
+          <div class="iftar-suhoor-row">
+            <div class="is-card iftar-card">
+              <span class="is-icon" aria-hidden="true">🌆</span>
+              <span class="is-label">الإفطار</span>
+              <span id="iftar-display-time" class="is-time">—</span>
+            </div>
+            <div class="is-card suhoor-card">
+              <span class="is-icon" aria-hidden="true">🌅</span>
+              <span class="is-label">السحور</span>
+              <span id="suhoor-display-time" class="is-time">—</span>
+            </div>
+          </div>
 
+          <!-- 6 prayer cards -->
+          <div class="prayer-cards-grid" id="prayer-cards-grid">
+            <div class="prayer-card" data-prayer="fajr">
+              <div class="pc-icon" aria-hidden="true">🌄</div>
+              <div class="pc-name">الفجر</div>
+              <div class="pc-time" id="pt-fajr">—</div>
+            </div>
+            <div class="prayer-card" data-prayer="shurooq">
+              <div class="pc-icon" aria-hidden="true">☀️</div>
+              <div class="pc-name">الشروق</div>
+              <div class="pc-time" id="pt-shurooq">—</div>
+            </div>
+            <div class="prayer-card" data-prayer="dhuhr">
+              <div class="pc-icon" aria-hidden="true">🌤️</div>
+              <div class="pc-name">الظهر</div>
+              <div class="pc-time" id="pt-dhuhr">—</div>
+            </div>
+            <div class="prayer-card" data-prayer="asr">
+              <div class="pc-icon" aria-hidden="true">🌇</div>
+              <div class="pc-name">العصر</div>
+              <div class="pc-time" id="pt-asr">—</div>
+            </div>
+            <div class="prayer-card pc-iftar" data-prayer="maghrib">
+              <div class="pc-icon" aria-hidden="true">🌆</div>
+              <div class="pc-name">المغرب <span class="iftar-badge">إفطار</span></div>
+              <div class="pc-time" id="pt-maghrib">—</div>
+            </div>
+            <div class="prayer-card" data-prayer="isha">
+              <div class="pc-icon" aria-hidden="true">🌙</div>
+              <div class="pc-name">العشاء</div>
+              <div class="pc-time" id="pt-isha">—</div>
+            </div>
+          </div>
 
-        // --- 2. LANTERN BACKGROUND ---
-        function createLanterns() {
-            const container = document.getElementById(CONTAINER_ID);
-            if (!container) return;
+          <div id="prayer-loading" class="prayer-loading hidden">
+            <div class="spinner"></div>
+            <p>جاري تحميل مواقيت الصلاة…</p>
+          </div>
+          <div id="prayer-error" class="prayer-error hidden">
+            <p>⚠️ تعذّر تحميل مواقيت الصلاة. تحقق من اتصالك بالإنترنت.</p>
+          </div>
+        </div>
 
-            for (let i = 0; i < LANTERN_COUNT; i++) {
-                const lantern = document.createElement('div');
-                lantern.classList.add(LANTERN_CLASS);
-                const startX = Math.random() * 100; 
-                const size = Math.random() * 50 + 50; 
-                const duration = Math.random() * 10 + 15; 
-                const delay = Math.random() * 15; 
-                lantern.style.setProperty('--lantern-size', `${size}px`);
-                lantern.style.left = `${startX}vw`;
-                lantern.style.animationDuration = `${duration}s`;
-                lantern.style.animationDelay = `${delay}s`;
-                lantern.style.setProperty('transform', `translateX(${Math.random() * 20 - 10}px)`);
-                container.appendChild(lantern);
-            }
-        }
-        document.addEventListener('DOMContentLoaded', createLanterns);
+      </div>
+    </section>
 
+    <!-- ══════════════════════════════ DAILY CONTENT SECTION ══════════════════════════════ -->
+    <section id="content" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">
+          <span class="title-icon" aria-hidden="true">📖</span>
+          محتوى اليوم
+        </h2>
 
-        // --- 3. CELEBRATION (FIREWORKS & CONFETTI) using Confetti.js ---
-        function startCelebration() {
-            if (celebrationStarted || typeof confetti === 'undefined') return;
-            celebrationStarted = true;
+        <!-- Day navigator -->
+        <div class="day-nav-bar">
+          <button class="day-nav-arrow" id="prev-day-btn" aria-label="اليوم السابق">›</button>
+          <div class="day-nav-center">
+            <span id="nav-day-num" class="nav-day-num"></span>
+            <span id="nav-hijri" class="nav-hijri"></span>
+          </div>
+          <button class="day-nav-arrow" id="next-day-btn" aria-label="اليوم التالي">‹</button>
+        </div>
 
-            const celebrationColors = ['#fcd34d', '#ffffff', '#1e3a8a', '#ff4500', '#00ffcc'];
+        <!-- Tabs -->
+        <div class="content-tabs" role="tablist">
+          <button class="ctab-btn active" data-tab="hadith" role="tab" aria-selected="true">
+            <span aria-hidden="true">📜</span> الحديث
+          </button>
+          <button class="ctab-btn" data-tab="quran" role="tab" aria-selected="false">
+            <span aria-hidden="true">🕌</span> القرآن
+          </button>
+          <button class="ctab-btn" data-tab="tasks" role="tab" aria-selected="false">
+            <span aria-hidden="true">✅</span> المهام
+          </button>
+        </div>
 
-            const defaults = {
-                ticks: 200,
-                gravity: 0.1,
-                decay: 0.94,
-                startVelocity: 35,
-                shapes: ['star', 'circle', 'square'],
-                colors: celebrationColors.map(c => c.replace('#', ''))
-            };
+        <!-- HADITH TAB -->
+        <div id="tab-hadith" class="ctab-panel active" role="tabpanel">
+          <div class="hadith-container">
+            <div class="hadith-day-theme" id="h-theme-badge"></div>
+            <blockquote class="hadith-quote">
+              <div class="hadith-mark" aria-hidden="true">«</div>
+              <p id="h-text" class="hadith-text"></p>
+              <div class="hadith-mark hadith-mark-close" aria-hidden="true">»</div>
+            </blockquote>
+            <div class="hadith-details">
+              <div class="hd-row">
+                <span class="hd-icon" aria-hidden="true">🗣️</span>
+                <span class="hd-key">الراوي:</span>
+                <span id="h-narrator" class="hd-val"></span>
+              </div>
+              <div class="hd-row">
+                <span class="hd-icon" aria-hidden="true">📚</span>
+                <span class="hd-key">المصدر:</span>
+                <span id="h-source" class="hd-val"></span>
+              </div>
+              <div class="hd-row">
+                <span class="hd-icon" aria-hidden="true">🔖</span>
+                <span class="hd-key">المرجع:</span>
+                <span id="h-reference" class="hd-val small"></span>
+              </div>
+              <div class="hd-row">
+                <span class="hd-icon" aria-hidden="true">✅</span>
+                <span class="hd-key">الدرجة:</span>
+                <span id="h-grade" class="hd-grade-badge"></span>
+              </div>
+            </div>
+            <div class="hadith-note-box">
+              <div class="hn-header">
+                <span aria-hidden="true">💡</span>
+                <span>فائدة وتأمل</span>
+              </div>
+              <p id="h-note" class="hn-text"></p>
+            </div>
+          </div>
+        </div>
 
-            const fire = (particleRatio, opts) => {
-                confetti({
-                    ...defaults,
-                    ...opts,
-                    particleCount: Math.floor(200 * particleRatio)
-                });
-            };
+        <!-- QURAN TAB -->
+        <div id="tab-quran" class="ctab-panel" role="tabpanel">
+          <div class="quran-container">
+            <div class="khatm-plan-tabs" role="tablist">
+              <button class="kp-btn active" data-plan="one" role="tab">ختمة واحدة</button>
+              <button class="kp-btn" data-plan="two" role="tab">ختمتان</button>
+              <button class="kp-btn" data-plan="three" role="tab">٣ ختمات</button>
+            </div>
 
-            // 1. MASSIVE INITIAL BURST 
-            fire(0.6, { spread: 180, startVelocity: 60, origin: { x: 0.5, y: 0.3 } });
-            fire(0.5, { spread: 100, origin: { x: 0.1, y: 0.5 } });
-            fire(0.5, { spread: 100, origin: { x: 0.9, y: 0.5 } });
-            fire(0.7, { spread: 150, decay: 0.91, scalar: 0.8, origin: { x: 0.5, y: 0.7 } });
-            
-            decayIntensity = 15; 
+            <!-- One Khatm -->
+            <div id="plan-one" class="kp-panel active">
+              <div class="juz-hero">
+                <span class="juz-hero-num" id="juz-num-display">١</span>
+                <div>
+                  <div id="juz-name-display" class="juz-hero-name"></div>
+                  <div id="juz-pages-display" class="juz-hero-pages"></div>
+                </div>
+              </div>
+              <div class="juz-from-to">
+                <div class="juz-ft-item">
+                  <span class="jft-label">من</span>
+                  <span id="juz-from-display" class="jft-val"></span>
+                </div>
+                <div class="juz-ft-divider" aria-hidden="true">←</div>
+                <div class="juz-ft-item">
+                  <span class="jft-label">إلى</span>
+                  <span id="juz-to-display" class="jft-val"></span>
+                </div>
+              </div>
+              <div class="sessions-label">جدول القراءة المقترح</div>
+              <div id="sessions-container" class="sessions-container"></div>
+              <button id="mark-juz-read-btn" class="mark-read-btn">
+                <span id="mark-juz-icon">☐</span>
+                <span id="mark-juz-text">علّم الجزء كمقروء</span>
+              </button>
+            </div>
 
-            // 2. CONTINUOUS DECAYING LOOP (Corrected Angled Cannons)
-            (function continuousDecay() {
-                const currentParticleCount = Math.floor(Math.max(MIN_INTENSITY, decayIntensity)); 
-                
-                // Left Canon (Origin: Bottom Left)
-                // Angle 60 degrees: Shoots diagonally up-right, into the page.
-                confetti({
-                    ...defaults,
-                    particleCount: currentParticleCount,
-                    scalar: 1.5,
-                    angle: 60, 
-                    spread: 25,
-                    origin: { x: 0.05, y: 1.0 } 
-                });
+            <!-- Two Khatm -->
+            <div id="plan-two" class="kp-panel">
+              <div class="multi-juz-label">اقرأ اليوم هذين الجزئين</div>
+              <div id="plan-two-list" class="multi-juz-list"></div>
+            </div>
 
-                // Right Canon (Origin: Bottom Right)
-                // Angle 120 degrees: Shoots diagonally up-left, into the page.
-                confetti({
-                    ...defaults,
-                    particleCount: currentParticleCount,
-                    scalar: 1.5,
-                    angle: 120, 
-                    spread: 25,
-                    origin: { x: 0.95, y: 1.0 } 
-                });
+            <!-- Three Khatm -->
+            <div id="plan-three" class="kp-panel">
+              <div class="multi-juz-label">اقرأ اليوم هؤلاء الأجزاء الثلاثة</div>
+              <div id="plan-three-list" class="multi-juz-list"></div>
+            </div>
 
-                // Apply decay if we are above the minimum limit
-                if (decayIntensity > MIN_INTENSITY) {
-                    decayIntensity *= DECAY_RATE; 
-                }
-                
-                // Always keep the loop running
-                setTimeout(continuousDecay, 300); 
-            })();
-        }
-    </script>
+            <!-- Quran tips -->
+            <div class="quran-tips-box" id="quran-tips-box">
+              <div class="qtb-header">💡 نصيحة</div>
+              <p class="qtb-text">اقرأ بتدبر وخشوع — خير من الكثير بغفلة</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- TASKS TAB -->
+        <div id="tab-tasks" class="ctab-panel" role="tabpanel">
+          <div class="tasks-container">
+            <div id="tasks-day-note" class="tasks-day-note"></div>
+            <div class="tasks-points-bar">
+              <span class="tpb-label">نقاط اليوم</span>
+              <span>
+                <span id="tasks-earned" class="tpb-earned">0</span>
+                <span class="tpb-sep">/</span>
+                <span id="tasks-total" class="tpb-total">0</span>
+              </span>
+            </div>
+            <div class="tasks-points-track">
+              <div id="tasks-progress-fill" class="tasks-progress-fill"></div>
+            </div>
+            <div id="tasks-list" class="tasks-list-wrap"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════ CALENDAR SECTION ══════════════════════════════ -->
+    <section id="calendar" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">
+          <span class="title-icon" aria-hidden="true">📅</span>
+          تقويم رمضان ١٤٤٧
+        </h2>
+        <div class="cal-legend">
+          <span class="cl-item"><span class="cl-dot mercy-bg" aria-hidden="true"></span>الرحمة</span>
+          <span class="cl-item"><span class="cl-dot forgiveness-bg" aria-hidden="true"></span>المغفرة</span>
+          <span class="cl-item"><span class="cl-dot freedom-bg" aria-hidden="true"></span>العتق</span>
+          <span class="cl-item"><span class="cl-dot gold-bg" aria-hidden="true"></span>ليلة القدر</span>
+        </div>
+        <div id="cal-grid" class="cal-grid" role="grid" aria-label="تقويم رمضان"></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════ QURAN TRACKER SECTION ══════════════════════════════ -->
+    <section id="tracker" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">
+          <span class="title-icon" aria-hidden="true">📋</span>
+          متابعة ختم القرآن
+        </h2>
+        <div class="tracker-header">
+          <div class="tracker-nums">
+            <span id="tracker-done-count" class="tracker-done">٠</span>
+            <span class="tracker-sep">/</span>
+            <span class="tracker-total-num">٣٠</span>
+            <span class="tracker-unit">جزءاً</span>
+          </div>
+          <div id="tracker-pct" class="tracker-pct">٠٪</div>
+        </div>
+        <div class="tracker-bar-outer">
+          <div id="tracker-bar-fill" class="tracker-bar-fill"></div>
+        </div>
+        <div id="tracker-juz-grid" class="tracker-juz-grid"></div>
+        <div class="tracker-actions">
+          <button class="tracker-reset-btn" id="reset-tracker-btn">↺ إعادة تعيين</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════ TASBIH SECTION ══════════════════════════════ -->
+    <section id="tasbih-section" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">
+          <span class="title-icon" aria-hidden="true">📿</span>
+          المسبحة الرقمية
+        </h2>
+
+        <!-- Dhikr selector -->
+        <div class="dhikr-selector" role="radiogroup" aria-label="اختر الذكر">
+          <button class="dhikr-btn active" data-dhikr="سبحان الله" data-max="33" data-total-rounds="3" role="radio" aria-checked="true">سبحان الله</button>
+          <button class="dhikr-btn" data-dhikr="الحمد لله" data-max="33" data-total-rounds="3" role="radio" aria-checked="false">الحمد لله</button>
+          <button class="dhikr-btn" data-dhikr="الله أكبر" data-max="33" data-total-rounds="3" role="radio" aria-checked="false">الله أكبر</button>
+          <button class="dhikr-btn" data-dhikr="لا إله إلا الله" data-max="100" data-total-rounds="1" role="radio" aria-checked="false">لا إله إلا الله</button>
+          <button class="dhikr-btn" data-dhikr="اللهم صلِّ على محمد" data-max="100" data-total-rounds="1" role="radio" aria-checked="false">الصلاة على النبي ﷺ</button>
+          <button class="dhikr-btn" data-dhikr="أستغفر الله" data-max="100" data-total-rounds="1" role="radio" aria-checked="false">الاستغفار</button>
+        </div>
+
+        <!-- Current dhikr text -->
+        <div id="tasbih-dhikr-display" class="tasbih-dhikr-display">سبحان الله</div>
+
+        <!-- Counter circle -->
+        <div class="tasbih-area">
+          <button class="tasbih-circle-btn" id="tasbih-tap-btn" aria-label="انقر للتسبيح">
+            <svg class="tasbih-ring" viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-track" cx="60" cy="60" r="52" fill="none" stroke="rgba(201,168,76,0.15)" stroke-width="6"/>
+              <circle class="ring-fill" id="tasbih-ring-fill" cx="60" cy="60" r="52" fill="none" 
+                      stroke="#c9a84c" stroke-width="6" stroke-linecap="round"
+                      stroke-dasharray="326.7" stroke-dashoffset="326.7"
+                      transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="tasbih-inner">
+              <div id="tasbih-count-display" class="tasbih-count-display">0</div>
+              <div id="tasbih-max-display" class="tasbih-max-display">/ 33</div>
+            </div>
+          </button>
+        </div>
+
+        <!-- Controls -->
+        <div class="tasbih-controls">
+          <button class="tasbih-ctrl-btn" id="tasbih-minus-btn" aria-label="طرح واحد">–</button>
+          <div class="tasbih-total-block">
+            <div class="ttb-label">المجموع</div>
+            <div id="tasbih-total-display" class="ttb-count">0</div>
+          </div>
+          <button class="tasbih-ctrl-btn tasbih-reset-btn-ctrl" id="tasbih-reset-btn" aria-label="إعادة تعيين">↺</button>
+        </div>
+
+        <!-- Completion message -->
+        <div id="tasbih-done-msg" class="tasbih-done-msg hidden">
+          <span class="tdm-emoji" aria-hidden="true">🎉</span>
+          <span id="tasbih-done-text"></span>
+        </div>
+
+        <!-- Rounds counter -->
+        <div class="tasbih-rounds">
+          <span class="tr-label">الجولات المكتملة:</span>
+          <span id="tasbih-rounds-display" class="tr-num">0</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-moon" aria-hidden="true">🌙</div>
+      <div class="footer-dua">اللهم بلّغنا رمضان وتقبّل منا صيامنا وقيامنا واجعلنا من عتقائه</div>
+      <div class="footer-year">رمضان المبارك ١٤٤٧ هـ — ٢٠٢٦ م</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

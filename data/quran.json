@@ -1,0 +1,1917 @@
+{
+  "meta": {
+    "title": "دليل ختم القرآن الكريم في رمضان",
+    "description": "معلومات شاملة عن القرآن الكريم وتوزيع الأجزاء وجداول الختم في رمضان.",
+    "ramadan_year": 1447,
+    "ramadan_start_gregorian": "2026-02-19",
+    "ramadan_end_gregorian": "2026-03-20",
+    "ramadan_days": 30,
+    "generated": "2026-02-20"
+  },
+  "quran_info": {
+    "mushaf": "المصحف المدني",
+    "total_pages": 604,
+    "total_juz": 30,
+    "total_hizb": 60,
+    "total_surahs": 114,
+    "total_ayahs": 6236,
+    "total_words": 77430,
+    "total_letters": 323671,
+    "pages_per_juz": 20,
+    "pages_per_hizb": 10,
+    "pages_per_rub_hizb": 5
+  },
+  "juz_breakdown": [
+    {
+      "juz": 1,
+      "name": "الجزء الأول",
+      "starts_surah": "الفاتحة (1:1)",
+      "ends_surah": "البقرة (2:141)",
+      "page_start": 1,
+      "page_end": 21,
+      "total_pages": 21
+    },
+    {
+      "juz": 2,
+      "name": "الجزء الثاني",
+      "starts_surah": "البقرة (2:142)",
+      "ends_surah": "البقرة (2:252)",
+      "page_start": 22,
+      "page_end": 41,
+      "total_pages": 20
+    },
+    {
+      "juz": 3,
+      "name": "الجزء الثالث",
+      "starts_surah": "البقرة (2:253)",
+      "ends_surah": "آل عمران (3:92)",
+      "page_start": 42,
+      "page_end": 61,
+      "total_pages": 20
+    },
+    {
+      "juz": 4,
+      "name": "الجزء الرابع",
+      "starts_surah": "آل عمران (3:93)",
+      "ends_surah": "النساء (4:23)",
+      "page_start": 62,
+      "page_end": 81,
+      "total_pages": 20
+    },
+    {
+      "juz": 5,
+      "name": "الجزء الخامس",
+      "starts_surah": "النساء (4:24)",
+      "ends_surah": "النساء (4:147)",
+      "page_start": 82,
+      "page_end": 101,
+      "total_pages": 20
+    },
+    {
+      "juz": 6,
+      "name": "الجزء السادس",
+      "starts_surah": "النساء (4:148)",
+      "ends_surah": "المائدة (5:81)",
+      "page_start": 102,
+      "page_end": 121,
+      "total_pages": 20
+    },
+    {
+      "juz": 7,
+      "name": "الجزء السابع",
+      "starts_surah": "المائدة (5:82)",
+      "ends_surah": "الأنعام (6:110)",
+      "page_start": 122,
+      "page_end": 141,
+      "total_pages": 20
+    },
+    {
+      "juz": 8,
+      "name": "الجزء الثامن",
+      "starts_surah": "الأنعام (6:111)",
+      "ends_surah": "الأعراف (7:87)",
+      "page_start": 142,
+      "page_end": 161,
+      "total_pages": 20
+    },
+    {
+      "juz": 9,
+      "name": "الجزء التاسع",
+      "starts_surah": "الأعراف (7:88)",
+      "ends_surah": "الأنفال (8:40)",
+      "page_start": 162,
+      "page_end": 181,
+      "total_pages": 20
+    },
+    {
+      "juz": 10,
+      "name": "الجزء العاشر",
+      "starts_surah": "الأنفال (8:41)",
+      "ends_surah": "التوبة (9:92)",
+      "page_start": 182,
+      "page_end": 201,
+      "total_pages": 20
+    },
+    {
+      "juz": 11,
+      "name": "الجزء الحادي عشر",
+      "starts_surah": "التوبة (9:93)",
+      "ends_surah": "هود (11:5)",
+      "page_start": 202,
+      "page_end": 221,
+      "total_pages": 20
+    },
+    {
+      "juz": 12,
+      "name": "الجزء الثاني عشر",
+      "starts_surah": "هود (11:6)",
+      "ends_surah": "يوسف (12:52)",
+      "page_start": 222,
+      "page_end": 241,
+      "total_pages": 20
+    },
+    {
+      "juz": 13,
+      "name": "الجزء الثالث عشر",
+      "starts_surah": "يوسف (12:53)",
+      "ends_surah": "إبراهيم (14:52)",
+      "page_start": 242,
+      "page_end": 261,
+      "total_pages": 20
+    },
+    {
+      "juz": 14,
+      "name": "الجزء الرابع عشر",
+      "starts_surah": "الحجر (15:1)",
+      "ends_surah": "النحل (16:128)",
+      "page_start": 262,
+      "page_end": 281,
+      "total_pages": 20
+    },
+    {
+      "juz": 15,
+      "name": "الجزء الخامس عشر",
+      "starts_surah": "الإسراء (17:1)",
+      "ends_surah": "الكهف (18:74)",
+      "page_start": 282,
+      "page_end": 301,
+      "total_pages": 20
+    },
+    {
+      "juz": 16,
+      "name": "الجزء السادس عشر",
+      "starts_surah": "الكهف (18:75)",
+      "ends_surah": "طه (20:135)",
+      "page_start": 302,
+      "page_end": 321,
+      "total_pages": 20
+    },
+    {
+      "juz": 17,
+      "name": "الجزء السابع عشر",
+      "starts_surah": "الأنبياء (21:1)",
+      "ends_surah": "الحج (22:78)",
+      "page_start": 322,
+      "page_end": 341,
+      "total_pages": 20
+    },
+    {
+      "juz": 18,
+      "name": "الجزء الثامن عشر",
+      "starts_surah": "المؤمنون (23:1)",
+      "ends_surah": "الفرقان (25:20)",
+      "page_start": 342,
+      "page_end": 361,
+      "total_pages": 20
+    },
+    {
+      "juz": 19,
+      "name": "الجزء التاسع عشر",
+      "starts_surah": "الفرقان (25:21)",
+      "ends_surah": "النمل (27:55)",
+      "page_start": 362,
+      "page_end": 381,
+      "total_pages": 20
+    },
+    {
+      "juz": 20,
+      "name": "الجزء العشرون",
+      "starts_surah": "النمل (27:56)",
+      "ends_surah": "العنكبوت (29:45)",
+      "page_start": 382,
+      "page_end": 401,
+      "total_pages": 20
+    },
+    {
+      "juz": 21,
+      "name": "الجزء الحادي والعشرون",
+      "starts_surah": "العنكبوت (29:46)",
+      "ends_surah": "الأحزاب (33:30)",
+      "page_start": 402,
+      "page_end": 421,
+      "total_pages": 20
+    },
+    {
+      "juz": 22,
+      "name": "الجزء الثاني والعشرون",
+      "starts_surah": "الأحزاب (33:31)",
+      "ends_surah": "يس (36:27)",
+      "page_start": 422,
+      "page_end": 441,
+      "total_pages": 20
+    },
+    {
+      "juz": 23,
+      "name": "الجزء الثالث والعشرون",
+      "starts_surah": "يس (36:28)",
+      "ends_surah": "الزمر (39:31)",
+      "page_start": 442,
+      "page_end": 461,
+      "total_pages": 20
+    },
+    {
+      "juz": 24,
+      "name": "الجزء الرابع والعشرون",
+      "starts_surah": "الزمر (39:32)",
+      "ends_surah": "فصلت (41:46)",
+      "page_start": 462,
+      "page_end": 481,
+      "total_pages": 20
+    },
+    {
+      "juz": 25,
+      "name": "الجزء الخامس والعشرون",
+      "starts_surah": "فصلت (41:47)",
+      "ends_surah": "الجاثية (45:37)",
+      "page_start": 482,
+      "page_end": 501,
+      "total_pages": 20
+    },
+    {
+      "juz": 26,
+      "name": "الجزء السادس والعشرون",
+      "starts_surah": "الأحقاف (46:1)",
+      "ends_surah": "الذاريات (51:30)",
+      "page_start": 502,
+      "page_end": 521,
+      "total_pages": 20
+    },
+    {
+      "juz": 27,
+      "name": "الجزء السابع والعشرون",
+      "starts_surah": "الذاريات (51:31)",
+      "ends_surah": "الحديد (57:29)",
+      "page_start": 522,
+      "page_end": 541,
+      "total_pages": 20
+    },
+    {
+      "juz": 28,
+      "name": "الجزء الثامن والعشرون",
+      "starts_surah": "المجادلة (58:1)",
+      "ends_surah": "التحريم (66:12)",
+      "page_start": 542,
+      "page_end": 561,
+      "total_pages": 20
+    },
+    {
+      "juz": 29,
+      "name": "الجزء التاسع والعشرون",
+      "starts_surah": "الملك (67:1)",
+      "ends_surah": "المرسلات (77:50)",
+      "page_start": 562,
+      "page_end": 581,
+      "total_pages": 20
+    },
+    {
+      "juz": 30,
+      "name": "الجزء الثلاثون",
+      "starts_surah": "النبأ (78:1)",
+      "ends_surah": "الناس (114:6)",
+      "page_start": 582,
+      "page_end": 604,
+      "total_pages": 23
+    }
+  ],
+  "completion_goals": [
+    {
+      "completions": 1,
+      "label": "ختمة واحدة في رمضان",
+      "total_pages_to_read": 604,
+      "daily_pages": 20.1,
+      "daily_juz": 1,
+      "daily_hizb": 2,
+      "pages_per_session_4x_daily": 5.0,
+      "recommended_sessions": [
+        {
+          "time": "بعد الفجر",
+          "pages": 5.0
+        },
+        {
+          "time": "بعد الظهر",
+          "pages": 5.0
+        },
+        {
+          "time": "بعد العصر",
+          "pages": 5.0
+        },
+        {
+          "time": "بعد التراويح",
+          "pages": 5.0
+        }
+      ],
+      "difficulty": "مريح",
+      "tip": "اقرأ 5 صفحات بعد كل صلاة من الصلوات الأربع — منهج سهل وثابت."
+    },
+    {
+      "completions": 2,
+      "label": "ختمتان في رمضان",
+      "total_pages_to_read": 1208,
+      "daily_pages": 40.3,
+      "daily_juz": 2,
+      "daily_hizb": 4,
+      "pages_per_session_4x_daily": 10.1,
+      "recommended_sessions": [
+        {
+          "time": "بعد الفجر",
+          "pages": 10.1
+        },
+        {
+          "time": "بعد الظهر",
+          "pages": 10.1
+        },
+        {
+          "time": "بعد العصر",
+          "pages": 10.1
+        },
+        {
+          "time": "بعد التراويح",
+          "pages": 10.1
+        }
+      ],
+      "difficulty": "متوسط",
+      "tip": "اقرأ نصف جزء بعد الفجر ونصف جزء بعد التراويح — يناسب روحانية الليالي الرمضانية."
+    },
+    {
+      "completions": 3,
+      "label": "ثلاث ختمات في رمضان",
+      "total_pages_to_read": 1812,
+      "daily_pages": 60.4,
+      "daily_juz": 3,
+      "daily_hizb": 6,
+      "pages_per_session_4x_daily": 15.1,
+      "recommended_sessions": [
+        {
+          "time": "بعد الفجر",
+          "pages": 15.1
+        },
+        {
+          "time": "بعد الظهر",
+          "pages": 15.1
+        },
+        {
+          "time": "بعد العصر",
+          "pages": 15.1
+        },
+        {
+          "time": "بعد التراويح",
+          "pages": 15.1
+        }
+      ],
+      "difficulty": "صعب",
+      "tip": "خصص حوالي 45 دقيقة لكل جلسة موزعة على 4 جلسات — يتطلب التزاماً قوياً."
+    },
+    {
+      "completions": 4,
+      "label": "أربع ختمات في رمضان",
+      "total_pages_to_read": 2416,
+      "daily_pages": 80.5,
+      "daily_juz": 4,
+      "daily_hizb": 8,
+      "pages_per_session_4x_daily": 20.1,
+      "recommended_sessions": [
+        {
+          "time": "بعد الفجر",
+          "pages": 20.1
+        },
+        {
+          "time": "بعد الظهر",
+          "pages": 20.1
+        },
+        {
+          "time": "بعد العصر",
+          "pages": 20.1
+        },
+        {
+          "time": "بعد التراويح",
+          "pages": 20.1
+        }
+      ],
+      "difficulty": "صعب جداً",
+      "tip": "للحفاظ وأصحاب الوقت الوفير — حوالي 80 صفحة يومياً."
+    }
+  ],
+  "tips": {
+    "general": [
+      "ابدأ بالنية الصادقة قبل رمضان.",
+      "استخدم طريقة 'بعد كل صلاة': 5 صفحات بعد كل صلاة تساوي جزءاً كاملاً في اليوم.",
+      "احتفظ بمصحفك أو تطبيقك في متناول يدك دائماً.",
+      "استمع إلى قارئ مثل الحصري أو السديس أثناء القراءة لتثبيت التركيز.",
+      "لا تترك يوماً بلا قراءة — التقصير يضاعف العبء.",
+      "تتبع تقدمك يومياً؛ رؤية الإنجاز تُحفّز على الاستمرار.",
+      "اقرأ بتجويد ولو ببطء — الجودة قبل الكمية.",
+      "اقرأ بصوت مسموع ما أمكن؛ فذلك يُعين على الحفظ والخشوع."
+    ],
+    "for_laylat_al_qadr_nights": [
+      "أكثر من القراءة في ليالي العشر الأخيرة الفردية: 21، 23، 25، 27، 29.",
+      "احرص على الانتهاء من ختمتك أو الاقتراب منها قبل ليلة السابع والعشرين.",
+      "ادعُ الله عند إتمام كل جزء."
+    ],
+    "minimum_daily_commitment": {
+      "one_khatmah": {
+        "pages_per_day": 20,
+        "minutes_approx": 40
+      },
+      "two_khatmah": {
+        "pages_per_day": 40,
+        "minutes_approx": 80
+      },
+      "three_khatmah": {
+        "pages_per_day": 60,
+        "minutes_approx": 120
+      }
+    }
+  },
+  "ramadan_daily_schedule": [
+    {
+      "ramadan_day": 1,
+      "date": "2026-02-19",
+      "hijri_day": "1 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 1,
+        "juz_name": "الجزء الأول",
+        "pages": "1–21",
+        "page_count": 21,
+        "from": "الفاتحة (1:1)",
+        "to": "البقرة (2:141)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          1,
+          2
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          1,
+          2,
+          3
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 2,
+      "date": "2026-02-20",
+      "hijri_day": "2 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 2,
+        "juz_name": "الجزء الثاني",
+        "pages": "22–41",
+        "page_count": 20,
+        "from": "البقرة (2:142)",
+        "to": "البقرة (2:252)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          3,
+          4
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          4,
+          5,
+          6
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 3,
+      "date": "2026-02-21",
+      "hijri_day": "3 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 3,
+        "juz_name": "الجزء الثالث",
+        "pages": "42–61",
+        "page_count": 20,
+        "from": "البقرة (2:253)",
+        "to": "آل عمران (3:92)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          5,
+          6
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          7,
+          8,
+          9
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 4,
+      "date": "2026-02-22",
+      "hijri_day": "4 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 4,
+        "juz_name": "الجزء الرابع",
+        "pages": "62–81",
+        "page_count": 20,
+        "from": "آل عمران (3:93)",
+        "to": "النساء (4:23)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          7,
+          8
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          10,
+          11,
+          12
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 5,
+      "date": "2026-02-23",
+      "hijri_day": "5 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 5,
+        "juz_name": "الجزء الخامس",
+        "pages": "82–101",
+        "page_count": 20,
+        "from": "النساء (4:24)",
+        "to": "النساء (4:147)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          9,
+          10
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          13,
+          14,
+          15
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 6,
+      "date": "2026-02-24",
+      "hijri_day": "6 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 6,
+        "juz_name": "الجزء السادس",
+        "pages": "102–121",
+        "page_count": 20,
+        "from": "النساء (4:148)",
+        "to": "المائدة (5:81)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          11,
+          12
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          16,
+          17,
+          18
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 7,
+      "date": "2026-02-25",
+      "hijri_day": "7 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 7,
+        "juz_name": "الجزء السابع",
+        "pages": "122–141",
+        "page_count": 20,
+        "from": "المائدة (5:82)",
+        "to": "الأنعام (6:110)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          13,
+          14
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          19,
+          20,
+          21
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 8,
+      "date": "2026-02-26",
+      "hijri_day": "8 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 8,
+        "juz_name": "الجزء الثامن",
+        "pages": "142–161",
+        "page_count": 20,
+        "from": "الأنعام (6:111)",
+        "to": "الأعراف (7:87)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          15,
+          16
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          22,
+          23,
+          24
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 9,
+      "date": "2026-02-27",
+      "hijri_day": "9 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 9,
+        "juz_name": "الجزء التاسع",
+        "pages": "162–181",
+        "page_count": 20,
+        "from": "الأعراف (7:88)",
+        "to": "الأنفال (8:40)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          17,
+          18
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          25,
+          26,
+          27
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 10,
+      "date": "2026-02-28",
+      "hijri_day": "10 رمضان 1447",
+      "ashr": "العشر الأولى",
+      "ashr_theme": "الرحمة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 10,
+        "juz_name": "الجزء العاشر",
+        "pages": "182–201",
+        "page_count": 20,
+        "from": "الأنفال (8:41)",
+        "to": "التوبة (9:92)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          19,
+          20
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          28,
+          29,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 11,
+      "date": "2026-03-01",
+      "hijri_day": "11 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 11,
+        "juz_name": "الجزء الحادي عشر",
+        "pages": "202–221",
+        "page_count": 20,
+        "from": "التوبة (9:93)",
+        "to": "هود (11:5)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          21,
+          22
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 12,
+      "date": "2026-03-02",
+      "hijri_day": "12 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 12,
+        "juz_name": "الجزء الثاني عشر",
+        "pages": "222–241",
+        "page_count": 20,
+        "from": "هود (11:6)",
+        "to": "يوسف (12:52)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          23,
+          24
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 13,
+      "date": "2026-03-03",
+      "hijri_day": "13 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 13,
+        "juz_name": "الجزء الثالث عشر",
+        "pages": "242–261",
+        "page_count": 20,
+        "from": "يوسف (12:53)",
+        "to": "إبراهيم (14:52)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          25,
+          26
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 14,
+      "date": "2026-03-04",
+      "hijri_day": "14 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 14,
+        "juz_name": "الجزء الرابع عشر",
+        "pages": "262–281",
+        "page_count": 20,
+        "from": "الحجر (15:1)",
+        "to": "النحل (16:128)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          27,
+          28
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 15,
+      "date": "2026-03-05",
+      "hijri_day": "15 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 15,
+        "juz_name": "الجزء الخامس عشر",
+        "pages": "282–301",
+        "page_count": 20,
+        "from": "الإسراء (17:1)",
+        "to": "الكهف (18:74)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          29,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 16,
+      "date": "2026-03-06",
+      "hijri_day": "16 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 16,
+        "juz_name": "الجزء السادس عشر",
+        "pages": "302–321",
+        "page_count": 20,
+        "from": "الكهف (18:75)",
+        "to": "طه (20:135)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          31,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 17,
+      "date": "2026-03-07",
+      "hijri_day": "17 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 17,
+        "juz_name": "الجزء السابع عشر",
+        "pages": "322–341",
+        "page_count": 20,
+        "from": "الأنبياء (21:1)",
+        "to": "الحج (22:78)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          33,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 18,
+      "date": "2026-03-08",
+      "hijri_day": "18 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 18,
+        "juz_name": "الجزء الثامن عشر",
+        "pages": "342–361",
+        "page_count": 20,
+        "from": "المؤمنون (23:1)",
+        "to": "الفرقان (25:20)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          35,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 19,
+      "date": "2026-03-09",
+      "hijri_day": "19 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 19,
+        "juz_name": "الجزء التاسع عشر",
+        "pages": "362–381",
+        "page_count": 20,
+        "from": "الفرقان (25:21)",
+        "to": "النمل (27:55)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          37,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 20,
+      "date": "2026-03-10",
+      "hijri_day": "20 رمضان 1447",
+      "ashr": "العشر الوسطى",
+      "ashr_theme": "المغفرة",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 20,
+        "juz_name": "الجزء العشرون",
+        "pages": "382–401",
+        "page_count": 20,
+        "from": "النمل (27:56)",
+        "to": "العنكبوت (29:45)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          39,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 21,
+      "date": "2026-03-11",
+      "hijri_day": "21 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": true,
+      "one_khatmah": {
+        "juz": 21,
+        "juz_name": "الجزء الحادي والعشرون",
+        "pages": "402–421",
+        "page_count": 20,
+        "from": "العنكبوت (29:46)",
+        "to": "الأحزاب (33:30)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          41,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 22,
+      "date": "2026-03-12",
+      "hijri_day": "22 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 22,
+        "juz_name": "الجزء الثاني والعشرون",
+        "pages": "422–441",
+        "page_count": 20,
+        "from": "الأحزاب (33:31)",
+        "to": "يس (36:27)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          43,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 23,
+      "date": "2026-03-13",
+      "hijri_day": "23 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": true,
+      "one_khatmah": {
+        "juz": 23,
+        "juz_name": "الجزء الثالث والعشرون",
+        "pages": "442–461",
+        "page_count": 20,
+        "from": "يس (36:28)",
+        "to": "الزمر (39:31)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          45,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 24,
+      "date": "2026-03-14",
+      "hijri_day": "24 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 24,
+        "juz_name": "الجزء الرابع والعشرون",
+        "pages": "462–481",
+        "page_count": 20,
+        "from": "الزمر (39:32)",
+        "to": "فصلت (41:46)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          47,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 25,
+      "date": "2026-03-15",
+      "hijri_day": "25 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": true,
+      "one_khatmah": {
+        "juz": 25,
+        "juz_name": "الجزء الخامس والعشرون",
+        "pages": "482–501",
+        "page_count": 20,
+        "from": "فصلت (41:47)",
+        "to": "الجاثية (45:37)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          49,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 26,
+      "date": "2026-03-16",
+      "hijri_day": "26 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 26,
+        "juz_name": "الجزء السادس والعشرون",
+        "pages": "502–521",
+        "page_count": 20,
+        "from": "الأحقاف (46:1)",
+        "to": "الذاريات (51:30)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          51,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 27,
+      "date": "2026-03-17",
+      "hijri_day": "27 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": true,
+      "one_khatmah": {
+        "juz": 27,
+        "juz_name": "الجزء السابع والعشرون",
+        "pages": "522–541",
+        "page_count": 20,
+        "from": "الذاريات (51:31)",
+        "to": "الحديد (57:29)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          53,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 28,
+      "date": "2026-03-18",
+      "hijri_day": "28 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 28,
+        "juz_name": "الجزء الثامن والعشرون",
+        "pages": "542–561",
+        "page_count": 20,
+        "from": "المجادلة (58:1)",
+        "to": "التحريم (66:12)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          55,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 29,
+      "date": "2026-03-19",
+      "hijri_day": "29 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": true,
+      "one_khatmah": {
+        "juz": 29,
+        "juz_name": "الجزء التاسع والعشرون",
+        "pages": "562–581",
+        "page_count": 20,
+        "from": "الملك (67:1)",
+        "to": "المرسلات (77:50)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          57,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    },
+    {
+      "ramadan_day": 30,
+      "date": "2026-03-20",
+      "hijri_day": "30 رمضان 1447",
+      "ashr": "العشر الأخيرة",
+      "ashr_theme": "العتق من النار",
+      "is_laylat_al_qadr_candidate": false,
+      "one_khatmah": {
+        "juz": 30,
+        "juz_name": "الجزء الثلاثون",
+        "pages": "582–604",
+        "page_count": 23,
+        "from": "النبأ (78:1)",
+        "to": "الناس (114:6)",
+        "sessions": [
+          {
+            "time": "بعد الفجر",
+            "pages": 5
+          },
+          {
+            "time": "بعد الظهر",
+            "pages": 5
+          },
+          {
+            "time": "بعد العصر",
+            "pages": 5
+          },
+          {
+            "time": "بعد التراويح",
+            "pages": 5
+          }
+        ]
+      },
+      "two_khatmah": {
+        "juz_numbers": [
+          59,
+          30
+        ],
+        "page_count": 40
+      },
+      "three_khatmah": {
+        "juz_numbers": [
+          30,
+          30,
+          30
+        ],
+        "page_count": 60
+      }
+    }
+  ]
+}
