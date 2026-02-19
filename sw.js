@@ -6,7 +6,10 @@ const PRECACHE_ASSETS = [
   '/style.css',
   '/script.js',
   '/data/manifest.json',
-  '/data/icon.png'
+  '/data/icon.png',
+  '/data/hadiths.json',
+  '/data/quran.json',
+  '/data/todo.json'
 ];
 
 // ── Install: pre-cache core assets ────────────────────────────────────────────
